@@ -7,7 +7,7 @@ services:
       APP_PORT: 3068
 
   server:
-    image: ourlink/mintsolo:latest@sha256:803af0d48ab4dc0186cba00e5585761b22c9d91ec89f2371015abad9a7af1016
+    image: ourlink/mintsolo:latest
     restart: unless-stopped
     ports:
       - 3068:3068/tcp
@@ -36,7 +36,7 @@ services:
       - zrok_env:/mnt
 
   zrok-enable:
-    image: ${ZROK_CONTAINER_IMAGE:-docker.io/openziti/zrok:latest}
+    image: docker.io/openziti/zrok:latest
     depends_on:
       zrok-init:
         condition: service_completed_successfully

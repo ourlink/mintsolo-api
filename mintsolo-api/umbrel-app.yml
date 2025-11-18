@@ -1,11 +1,11 @@
 manifestVersion: 1
 id: mintsolo-api
-name: Mintsolo API
+name: MintSolo API
 tagline: MintSolo - API for Mining Bitcoin
 icon: https://i.imgur.com/PrgiuqS.png
 category: Development
-version: "1.0.0"
-port: 8080
+version: "0.0.1"
+port: 4000
 description: >-
   Add your app's description here.
 

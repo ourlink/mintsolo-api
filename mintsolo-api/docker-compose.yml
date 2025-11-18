@@ -4,7 +4,7 @@ services:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: mintsolo-api_server_1
-      APP_PORT: 4000
+      APP_PORT: 3066
 
   server:
     image: ourlink/mintsolo:latest
@@ -68,7 +68,7 @@ services:
   mintsolo-info:
     image: ourlink/mintsolo-info:latest
     ports:
-      - 4000:80
+      - 3066:80
     volumes:
       - zrok_env:/mnt
     restart: unless-stopped
